@@ -1,0 +1,120 @@
+/* YOUR CUSTOM STYLES */
+
+.pendinginquire {
+background-color: rgba(3, 169, 244, 0.3);
+color: black;
+padding: 2rem;
+}
+
+.actualinquire {
+background-color: rgba(0, 200, 81, 0.3);
+color: black;
+padding: 2rem;
+}
+
+.doneinquire {
+background-color: rgba(255, 68, 68, 0.3);
+color: black;
+padding: 2rem;
+}
+img.number {
+  max-height: 1.5rem; 
+}
+
+span.number {
+  position: absolute;
+  margin-left: 1.1rem;
+  margin-top: 1px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.logincard {
+  width:40rem;
+}
+
+.footerfix {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Timeline for main page*/
+
+.timeline {
+  width: 100%;
+  background: #fff;
+  padding: 50px 10px;
+  position: relative;
+  box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+}
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: calc(25% + 15px);
+  bottom: 0px;
+  width: 4px;
+  background: #ddd;
+}
+.timeline:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.entry {
+  clear: both;
+  text-align: left;
+  position: relative;
+}
+.entry .title {
+  margin-bottom: .5em;
+  float: left;
+  width: 25%;
+  padding-right: 30px;
+  text-align: right;
+  position: relative;
+}
+.entry .title:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 4px solid salmon;
+  background-color: #fff;
+  border-radius: 100%;
+  right: -21px;
+  z-index: 99;
+}
+.entry .title h3 {
+  margin: 0px;
+  font-size: 120%;
+}
+.entry .title p {
+  margin: 0;
+  font-size: 100%;
+}
+.entry .body {
+  margin: 0 0 3em;
+  float: right;
+  width: 75%;
+  padding-left: 30px;
+}
+.entry .body p {
+  line-height: 1.4em;
+}
+.entry .body p:first-child {
+  margin: 0;
+  font-weight: 400;
+}
+.entry .body ul {
+  color: #aaa;
+  padding-left: 0;
+  list-style-type: none;
+}
+.entry .body ul li:before {
+  content: "–";
+  margin-right: .5em;
+}
+
