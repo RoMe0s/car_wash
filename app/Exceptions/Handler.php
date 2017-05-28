@@ -5,6 +5,7 @@ namespace App\Exceptions;
 use Exception;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Response;
 
 class Handler extends ExceptionHandler
 {
@@ -44,6 +45,20 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        /*if ($this->isHttpException($exception) && env('HANDLE_ERROR', true)) {
+            $statusCode = $exception->getStatusCode();
+                switch ($statusCode) {
+                    case 404:
+                        return redirect(route('home'), 301);
+            }
+        }*/
+
+/*        if($request->ajax()) {
+
+            return Response::json(['status' => 'error', 'message' => $exception->getMessage()]);
+
+        }*/
+
         return parent::render($request, $exception);
     }
 

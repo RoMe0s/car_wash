@@ -17,6 +17,8 @@ Route::get('logout', [
 
         \Illuminate\Support\Facades\Auth::logout();
 
+        dd(\Illuminate\Support\Facades\Auth::user());
+
         return redirect(route('home'));
 
     }

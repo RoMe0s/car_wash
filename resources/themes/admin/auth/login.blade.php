@@ -12,12 +12,12 @@
         <hr>
 
         <button type="button" class="btn btn-outline-primary btn-rounded" data-toggle="modal" data-target="#modallogin">
-
-          login
-
+            Авторизация
         </button>
 
-        <a class="btn btn-outline-primary btn-rounded waves-effect" href="registration.html">Registration</a>
+        <a class="btn btn-outline-primary btn-rounded waves-effect" href="registration.html">
+            Регистрация
+        </a>
 
     </div>
 

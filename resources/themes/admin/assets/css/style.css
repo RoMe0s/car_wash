@@ -117,4 +117,23 @@ span.number {
   content: "–";
   margin-right: .5em;
 }
+.page-footer {
 
+    z-index: 1000;
+
+}
+ul.stepper.object li:not(.active) div.step-content {
+
+    display: none;
+
+}
+ul.stepper.object li.validated span.circle {
+
+    background-color: #5cb85c !important;
+
+}
+.duplicate {
+
+    display: none !important;
+
+}

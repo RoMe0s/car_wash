@@ -18,7 +18,7 @@
 
         @include('partials.header')
 
-        <div class="container-fluid" style="padding-top: 5rem;">
+        <div class="container-fluid" style="padding-top: 2rem; margin-bottom: 80px;">
 
             @yield('content')
 
@@ -26,12 +26,12 @@
 
         @include('partials.footer')
 
-        @section('scripts')
-            @include('partials.scripts')
-        @show
-
         @section('popups')
 
+        @show
+
+        @section('scripts')
+            @include('partials.scripts')
         @show
         
     </body>

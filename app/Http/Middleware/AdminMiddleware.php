@@ -12,7 +12,7 @@ class AdminMiddleware
 
     function __construct() {
     
-        $user = Auth::getUser();
+        $user = Auth::user();
         
         $this->user = $user;
     
@@ -28,8 +28,9 @@ class AdminMiddleware
     public function handle($request, Closure $next)
     {
 
-        if(!$this->user) return redirect(route('admin.login'), 301);
+         if(!$this->user) return redirect(route('admin.login'), 301);
         
         return $next($request);
+
     }
 }

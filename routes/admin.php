@@ -17,6 +17,10 @@ Route::group(['prefix' => 'admin'], function() {
             'as' => 'admin',
             'uses' => 'Admin\DefaultController@index'
         ]);
+
+        Route::resource('object', 'Admin\ObjectController', [
+            'only' => ['edit']
+        ]);
     
     });
 

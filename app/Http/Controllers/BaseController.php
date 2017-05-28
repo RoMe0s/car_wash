@@ -26,6 +26,7 @@ class BaseController extends Controller
 
     function __construct()
     {
+
         $this->user = Auth::user();
 
         $this->fillMeta();
